@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bán ảnh chân dung</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .product-card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .buy-button {
+            transition: background-color 0.3s ease, transform 0.1s ease;
+        }
+        .buy-button:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div class="container mx-auto bg-white rounded-3xl overflow-hidden shadow-2xl">
+        
+        <!-- Header -->
+        <header class="bg-gray-800 text-white p-6 md:p-8 text-center rounded-t-3xl">
+            <h1 class="text-3xl md:text-5xl font-bold tracking-tight">Cửa hàng nô lệ cao cấp</h1>
+            <p class="text-lg md:text-xl mt-2 font-light text-gray-400">Sở hữu ngay nô lệ cho riêng bạn</p>
+        </header>
+
+        <!-- Product Section -->
+        <main class="p-6 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            
+            <!-- Image Display -->
+            <div class="flex justify-center">
+                <div class="product-card bg-gray-50 p-4 md:p-6 rounded-2xl w-full max-w-lg">
+                    <img src="https://lh3.googleusercontent.com/d/1B1m42vOhVs6GyWw7iwz0t1wWvUlCKrFR=s1200" 
+                         alt="Hình ảnh chân dung độc đáo" 
+                         class="rounded-xl w-full h-auto object-cover" 
+                         onerror="this.onerror=null;this.src='https://placehold.co/800x1000/000000/fff?text=Hình+ảnh+không+sẵn';">
+                </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="text-center md:text-left space-y-6">
+                <h2 class="text-2xl md:text-4xl font-bold text-gray-900">Bức ảnh chân dung của tên nô lệ</h2>
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    Đây là một tên nô lệ da đen, làm việc năng suất khá cao.Nhưng cẩn thận vì tên này có thể địt bạn !
+                </p>
+                
+                <!-- Price and Call to Action -->
+                <div class="flex flex-col md:flex-row items-center md:space-x-8 space-y-4 md:space-y-0 mt-6">
+                    <div class="text-4xl font-bold text-green-600">
+                        1,000đ
+                    </div>
+                    <button class="buy-button w-full md:w-auto px-10 py-4 bg-green-500 text-white font-bold rounded-full text-lg hover:bg-green-600 focus:outline-none focus:ring-4 focus:ring-green-300 transition-all duration-300">
+                        Mua ngay
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-gray-300 p-6 md:p-8 text-center rounded-b-3xl mt-8">
+            <p>&copy; 2025 Cửa hàng nô lệ. Tất cả các quyền được bảo lưu.</p>
+        </footer>
+
+    </div>
+    
+</body>
+</html>
+
